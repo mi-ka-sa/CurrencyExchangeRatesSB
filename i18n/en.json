@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Serhii Baskakov"
+        ]
+    },
+    "currencyexchangeratessb": "Currency Exchange Rates SB",
+    "currencyexchangeratessb-desc": "Add a page that displays currency exchange rates for the USD/CZK, EUR/CZK, GBP/CZK or others pairs",
+    "currencyexchangeratessb-title": "Currency Exchange Rates (special page)",
+    "currencyexchangeratessb-content": "Here's a link so you never lose it:",
+    "currencyexchangeratessb-head-table": "Exchange rate to the $1",
+    "currencyexchangeratessb-timer": "Data will be updated in $1 min $2 sec"
+}

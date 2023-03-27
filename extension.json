@@ -1,0 +1,79 @@
+{
+    "name": "CurrencyExchangeRatesSB",
+    "version": "0.1.0",
+    "author": [
+        "Serhii Baskakov"
+    ],
+    "descriptionmsg": "currencyexchangeratessb-desc",
+    "license-name": "GPL-2.0-or-later",
+    "type": "other",
+    "requires": {
+        "MediaWiki": ">= 1.35.0"
+    },
+    "config": {
+        "CurrencyExchangeRatesSBNamePage": {
+            "description": "The link for special page where the our page will be accessible",
+            "value": "CurrencyExchangeRatesSB"
+        },
+        "CurrencyExchangeRatesSBPairs": {
+            "description": "Сurrency pairs in the form of an array",
+            "value": {
+                "CZK": [
+                    "USD",
+                    "EUR",
+                    "GBP"
+                ]
+            }
+        },
+        "CurrencyExchangeRatesSBTimeReload": {
+            "description": "Time in seconds",
+            "value": 60
+        },
+        "FreeCurrencyApiKey": {
+            "value": "JpxbveXKvbmdCRkX98mPwffHS43qY9ySANbDVqFD",
+            "description": "API token to be used with FreecurrencyApi",
+            "public": false
+        }
+    },
+    "MessagesDirs": {
+        "CurrencyExchangeRatesSB": [
+            "i18n"
+        ]
+    },
+    "AutoloadNamespaces": {
+        "MediaWiki\\Extension\\CurrencyExchangeRatesSB\\": "src/"
+    },
+    "SpecialPages": {
+        "CurrencyExchangeRatesSB": "MediaWiki\\Extension\\CurrencyExchangeRatesSB\\SpecialCurrencyExchangeRatesSB"
+    },
+    "APIModules": {
+        "askcurrencyexchangeratessb": "MediaWiki\\Extension\\CurrencyExchangeRatesSB\\ApiCurrency"
+    },
+    "HookHandlers": {
+        "main": {
+            "class": "MediaWiki\\Extension\\CurrencyExchangeRatesSB\\Hooks"
+        }
+    },
+    "Hooks": {
+        "BeforeInitialize": "main",
+        "BeforePageDisplay": "main"
+    },
+    "ResourceModules": {
+        "ext.CurrencyExchangeRatesSB": {
+            "class": "MediaWiki\\Extension\\CurrencyExchangeRatesSB\\Module",
+            "localBasePath": "modules/ext.CurrencyExchangeRatesSB",
+            "remoteExtPath": "CurrencyExchangeRatesSB/modules/ext.CurrencyExchangeRatesSB",
+            "messages": [
+                "currencyexchangeratessb-head-table",
+                "currencyexchangeratessb-timer"
+            ],
+            "scripts": [
+                "ext.CurrencyExchangeRatesSB.js"
+            ],
+            "styles": [
+                "ext.CurrencyExchangeRatesSB.css"
+            ]
+        }
+    },
+    "manifest_version": 2
+}

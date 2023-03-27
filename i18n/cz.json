@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Serhii Baskakov"
+        ]
+    },
+    "currencyexchangeratessb": "Směnné kurzy měn SB",
+    "currencyexchangeratessb-desc": "Přidání stránky, která zobrazuje směnné kurzy pro páry USD/CZK, EUR/CZK, GBP/CZK nebo jiné.",
+    "currencyexchangeratessb-title": "Směnné kurzy (zvláštní stránka)",
+    "currencyexchangeratessb-content": "Zde je odkaz, abyste ho nikdy neztratili:",
+    "currencyexchangeratessb-head-table": "Směnný kurz k $1",
+    "currencyexchangeratessb-timer": "Data budou aktualizována za $1 min $2 s"
+}
