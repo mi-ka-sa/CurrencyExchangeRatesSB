@@ -9,5 +9,8 @@
     "currencyexchangeratessb-title": "Currency Exchange Rates (special page)",
     "currencyexchangeratessb-content": "Here's a link so you never lose it:",
     "currencyexchangeratessb-head-table": "Exchange rate to the $1",
-    "currencyexchangeratessb-timer": "Data will be updated in $1 min $2 sec"
+    "currencyexchangeratessb-timer": "The data will be updated in $1 min $2 sec",
+    "currencyexchangeratessb-done-to-timer": "The data has been successfully uploaded",
+    "currencyexchangeratessb-preload-data": "Please wait...",
+    "currencyexchangeratessb-conten-for-new-page": "The content will be uploaded, otherwise contact the administrator..."
 }

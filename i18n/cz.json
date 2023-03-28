@@ -9,5 +9,8 @@
     "currencyexchangeratessb-title": "Směnné kurzy (zvláštní stránka)",
     "currencyexchangeratessb-content": "Zde je odkaz, abyste ho nikdy neztratili:",
     "currencyexchangeratessb-head-table": "Směnný kurz k $1",
-    "currencyexchangeratessb-timer": "Data budou aktualizována za $1 min $2 s"
+    "currencyexchangeratessb-timer": "Data budou aktualizována za $1 min $2 s",
+    "currencyexchangeratessb-done-to-timer": "Data byla úspěšně nahrána",
+    "currencyexchangeratessb-preload-data": "Počkejte prosí...",
+    "currencyexchangeratessb-conten-for-new-page": "Obsah bude nahrán, v opačném případě kontaktujte správce"
 }

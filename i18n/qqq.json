@@ -6,8 +6,11 @@
     },
     "currencyexchangeratessb": "Currency Exchange Rates SB",
     "currencyexchangeratessb-desc": "Add a page that displays currency exchange rates for the USD/CZK, EUR/CZK, GBP/CZK or others pairs",
-    "currencyexchangeratessb-title": "Currency Exchange Rates (special page)",
-    "currencyexchangeratessb-content": "Here's a link so you never lose it:",
+    "currencyexchangeratessb-title": "The header text on the special page",
+    "currencyexchangeratessb-content": "The Text for a special page that informs the user about a link to a regular page where he will get currency pair quotes",
     "currencyexchangeratessb-head-table": "Exchange rate to the $1",
-    "currencyexchangeratessb-timer": "Data will be updated in $1 min $2 sec"
+    "currencyexchangeratessb-timer": "Text when counting down to a new download of quotes, where $1 is minutes and $2 is seconds",
+    "currencyexchangeratessb-done-to-timer": "The message to the user when new currency pair quotes are successfully downloaded",
+    "currencyexchangeratessb-preload-data": "The polite message so that the user waits a little while the API responds",
+    "currencyexchangeratessb-conten-for-new-page": "The text that is used as a stub when creating a new page"
 }

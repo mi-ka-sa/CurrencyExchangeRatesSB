@@ -65,7 +65,9 @@
             "remoteExtPath": "CurrencyExchangeRatesSB/modules/ext.CurrencyExchangeRatesSB",
             "messages": [
                 "currencyexchangeratessb-head-table",
-                "currencyexchangeratessb-timer"
+                "currencyexchangeratessb-timer",
+                "currencyexchangeratessb-done-to-timer",
+                "currencyexchangeratessb-preload-data"
             ],
             "scripts": [
                 "ext.CurrencyExchangeRatesSB.js"

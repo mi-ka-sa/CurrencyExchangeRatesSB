@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\CurrencyExchangeRatesSB;
 
-
 class Hooks implements 
 	\MediaWiki\Hook\BeforeInitializeHook, 
 	\MediaWiki\Hook\BeforePageDisplayHook
@@ -12,10 +11,9 @@ class Hooks implements
 		
 		$config = $output->getConfig();
 		$userNamePage = $config->get( 'CurrencyExchangeRatesSBNamePage' );
-		$currencyPairs = $config->get( 'CurrencyExchangeRatesSBPairs' );
 
 		// Сheck for the existence of the page is done internally
-		Page::create( $userNamePage, $currencyPairs, $output, $user );
+		Page::create( $userNamePage );
 
 	}
 

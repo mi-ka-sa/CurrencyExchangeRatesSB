@@ -6,8 +6,8 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\SlotRecord;
 
 class Page {
-    
-    public static function create( string $name, array $content, $output, $user ): bool {
+
+    public static function create( string $name ): bool {
 
         $pageTitle = \Title::newFromText( $name );
 
@@ -22,9 +22,9 @@ class Page {
 			$page = new WikiPage( $pageTitle );
 		}
 
-		$updater = $page->newPageUpdater( $user );
+		$updater = $page->newPageUpdater( \RequestContext::getMain()->getUser() );
 		
-		$pageContent = \ContentHandler::makeContent( self::putContent( $content, $output ), $pageTitle );
+		$pageContent = \ContentHandler::makeContent( self::putContent(), $pageTitle );
 		
 		$updater->setContent( SlotRecord::MAIN, $pageContent );
 		
@@ -35,7 +35,7 @@ class Page {
         return true;
     }
 
-    public static function putContent ( $output ) {
+    public static function putContent () {
 
         return \Xml::element(
             'div',
@@ -44,7 +44,8 @@ class Page {
             \Xml::element(
             'div',
             [ 'id' => 'currencyexchangeratessb-container' ],
-            "Сontent is downloading..."
+            \RequestContext::getMain()->msg( 'currencyexchangeratessb-conten-for-new-page' )
         );
+        
     }
 }
