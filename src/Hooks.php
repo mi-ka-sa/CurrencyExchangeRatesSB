@@ -18,9 +18,9 @@ class Hooks implements
 	}
 
 	public function onBeforePageDisplay( $out, $skin ): void {
-		
-		$title = $out->getTitle()->getText();
-		$ourPage = $out->getConfig()->get( 'CurrencyExchangeRatesSBNamePage');
+
+		$title = $out->getTitle()->getFullText();
+		$ourPage = $out->getConfig()->get( 'CurrencyExchangeRatesSBNamePage' );
 		
 		if (strtolower( $title ) == strtolower( $ourPage ) ) {
 			$out->addModules( 'ext.CurrencyExchangeRatesSB' );
